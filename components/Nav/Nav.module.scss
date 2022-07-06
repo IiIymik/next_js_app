@@ -1,0 +1,57 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  max-height: 90px;
+  width: 100%;
+  padding: 7px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+  border-bottom: 1px solid tomato;
+  > .logo_container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  > .link_container {
+    display: flex;
+
+    > .list_items {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+
+      > .item {
+        padding: 10px;
+        color: tomato;
+        border: 1px solid tomato;
+        cursor: pointer;
+        user-select: none;
+        &:hover,
+        &:focus {
+          background-color: tomato;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  padding: 10px;
+  color: #3399ff;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+
+  font-size: 30px;
+  cursor: pointer;
+}
